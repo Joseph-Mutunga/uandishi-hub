@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Uandishi Hub</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #f4f4f4; 
+            margin: 0; 
+            padding: 0; 
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 80px;
+            background-color: #E3E6F3;
+            color: #2d2d2d;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06 );
+            position: sticky;
+            inset-block-start: 0;
+            inset-inline-start: 0;
+        }
+        .navbar .logo img {
+            inline-size: 90px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #2d2d2d;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: bold;
+            position: relative;
+        }
+        .nav-links a:hover {
+            color: #088178;
+        }
+        .nav-links a::after {
+            content: '';
+            display: block;
+            block-size: 2px;
+            background: #088178;
+            inline-size: 0;
+            transition: width 0.3s ease;
+            position: absolute;
+            inset-block-end: -5px;
+            inset-inline-start: 0;
+        }
+        .nav-links a:hover::after {
+            inline-size: 100%;
+        }
+        .login-button {
+            background-color: #f7c731;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #2d2d2d;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .login-button:hover {
+            background-color: #ffb81c;
+            transform: translateY(-2px);
+        }
+        .container { 
+            padding: 20px 50px; 
+            max-inline-size: 1000px; 
+            margin: auto; 
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+            border-radius: 8px; 
+            text-align: center;
+        }
+        .header {
+            background: #E3E6F3;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+        }
+        h1 { 
+            color: #333; 
+        }
+        h2 {
+            color: #0078D4;
+        }
+        .mission, .values, .services, .about-history {
+            margin: 30px 0;
+        }
+        .mission p, .values p, .services p, .about-history p {
+            background: #e0f7fa;
+            padding: 15px;
+            border-radius: 5px;
+            color: #00796b;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="../images/logo.png" alt="Uandishi Hub Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+            <a href="login.html" class="login-button">Login</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="header">
+            <h1>About Uandishi Hub</h1>
+        </div>
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>At Uandishi Hub, we aim to empower creativity and facilitate expression through high-quality stationery products. We believe that everyone has a story to tell, and our mission is to provide the tools that make the writing process a joy.</p>
+        </section>
+        <section class="values">
+            <h2>Our Values</h2>
+            <p>We are committed to quality, innovation, and customer satisfaction. Our values drive everything we do, ensuring that our products are not only functional but also inspire creativity and excellence.</p>
+        </section>
+        <section class="about-history">
+            <h2>Our Story</h2>
+            <p>Founded with a passion for writing and creativity, Uandishi Hub started as a small local shop catering to students and professionals. Over the years, we’ve grown into a trusted name for quality stationery, serving a diverse community of customers. Our journey reflects our dedication to helping everyone, from students to artists, bring their ideas to life.</p>
+        </section>
+        <section class="services">
+            <h2>Our Services</h2>
+            <p>From notebooks and pens to custom stationery and office supplies, Uandishi Hub offers a wide range of products to cater to all your writing needs. We also provide personalized services to help you create unique stationery that reflects your style.</p>
+        </section>
+        <section class="about-future">
+            <h2>Our Vision for the Future</h2>
+            <p>Uandishi Hub envisions becoming the leading hub for innovative and sustainable stationery solutions. By embracing eco-friendly practices and leveraging technology, we aim to redefine how people think about and use stationery in their daily lives.</p>
+        </section>
+    </div>
+</body>
+</html>
